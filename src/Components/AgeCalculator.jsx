@@ -12,7 +12,7 @@ const AgeCalculator = () => {
 
             let years = todayDate.getFullYear() - birthDate.getFullYear();
             let months = todayDate.getMonth() - birthDate.getMonth();
-            let days = birthDate.getDate() - todayDate.getDate();
+            let days = todayDate.getDate()-birthDate.getDate() ;
 
             setAge({ years, months, days });
         }
